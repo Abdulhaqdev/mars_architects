@@ -50,7 +50,7 @@ export default function Hero() {
   };
 
   return (
-    <main className="min-h-[700px] relative 3xl:max-w-screen-2xl mx-auto text-white overflow-hidden">
+    <main className="min-h-[800px] relative 3xl:max-w-screen-2xl mx-auto text-white overflow-hidden">
       {/* Navigation */}
       <nav id='home' className=" flex justify-between container h-24 items-center w-full md:px-2 py-4 md:py-6 z-20">
         {/* Logo */}
