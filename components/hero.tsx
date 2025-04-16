@@ -1,21 +1,23 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-export default function Hero() {
+interface FooterData {
+  facebook?: string;
+  instagram?: string;
+  telegram?: string;
+}
+
+interface HeroProps {
+  footerData: FooterData | null;
+}
+
+export default function Hero({ footerData }: HeroProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentHash, setCurrentHash] = useState("");
-  interface FooterData {
-    facebook?: string;
-    instagram?: string;
-    telegram?: string;
-  }
-
-  const [footerData, setFooterData] = useState<FooterData | null>(null);
 
   // Handle hash changes for navigation
   useEffect(() => {
@@ -31,29 +33,14 @@ export default function Hero() {
     };
   }, []);
 
-  // Fetch footer data from API
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await axios.get("https://api.mars-architects.us/aboutus/about-us/");
-        setFooterData(res.data.data[0]);
-      } catch (error) {
-        console.error("Error fetching footer data:", error);
-      }
-    };
-    fetchData();
-  }, []);
-
   const toggleMenu = () => {
-    console.log("Toggling menu, current state:", isMenuOpen);
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <main className="min-h-[800px] relative 3xl:max-w-screen-2xl mx-auto text-white overflow-hidden">
       {/* Navigation */}
-      <nav id='home' className=" flex justify-between container h-24 items-center w-full md:px-2 py-4 md:py-6 z-20">
-        {/* Logo */}
+      <nav id="home" className="flex justify-between container h-24 items-center w-full md:px-2 py-4 md:py-6 z-20">
         <div>
           <Image
             src="/logo.svg"
@@ -64,7 +51,6 @@ export default function Hero() {
             priority
           />
         </div>
-        {/* Social Icons */}
         <div className="flex items-center gap-3 md:gap-6">
           {footerData?.facebook && (
             <Link
@@ -74,24 +60,12 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clipPath="url(#clip0_2_156)">
-                  <path
-                    d="M24 12C24 5.37188 18.6281 0 12 0C5.37188 0 0 5.37188 0 12C0 17.9906 4.3875 22.9547 10.125 23.8547V15.4688H7.07812V12H10.125V9.35625C10.125 6.34922 11.9156 4.6875 14.6578 4.6875C15.9703 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8297C14.3391 7.875 13.875 8.80078 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8547C19.6125 22.9547 24 17.9906 24 12Z"
-                    fill="#F2F2F2"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_2_156">
-                    <rect width="24" height="24" fill="white" />
-                  </clipPath>
-                </defs>
+              {/* SVG for Facebook */}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 12C24 5.37188 18.6281 0 12 0C5.37188 0 0 5.37188 0 12C0 17.9906 4.3875 22.9547 10.125 23.8547V15.4688H7.07812V12H10.125V9.35625C10.125 6.34922 11.9156 4.6875 14.6578 4.6875C15.9703 4.6875 17.3438 4.92188 17.3438 4.92188V7.875H15.8297C14.3391 7.875 13.875 8.80078 13.875 9.75V12H17.2031L16.6711 15.4688H13.875V23.8547C19.6125 22.9547 24 17.9906 24 12Z"
+                  fill="#F2F2F2"
+                />
               </svg>
             </Link>
           )}
@@ -103,13 +77,8 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              {/* SVG for Instagram */}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -137,13 +106,8 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              {/* SVG for Telegram */}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -153,18 +117,8 @@ export default function Hero() {
               </svg>
             </Link>
           )}
-          <button
-            onClick={toggleMenu}
-            className="focus:outline-none"
-            aria-label="Toggle menu"
-          >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+          <button onClick={toggleMenu} className="focus:outline-none" aria-label="Toggle menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M21 7.75H3C2.59 7.75 2.25 7.41 2.25 7C2.25 6.59 2.59 6.25 3 6.25L21 6.25C21.41 6.25 21.75 6.59 21.75 7C21.75 7.41 21.41 7.75 21 7.75Z"
                 fill="#727376"
@@ -182,7 +136,6 @@ export default function Hero() {
         </div>
       </nav>
       <div className="h-[calc(100vh-1px)] container md:h-[calc(600px-400px)]">
-        {/* Hero Image */}
         <div className="absolute md:right-0 h-3/4 max-w-6xl z-0">
           <Image
             src="/hero.png"
@@ -193,8 +146,6 @@ export default function Hero() {
             priority
           />
         </div>
-
-        {/* Hero Content */}
         <div className="relative z-10 h-[calc(720px-1px)] md:h-[calc(650px-1px)] flex flex-col gap-5 justify-center align-bottom max-w-5xl">
           <h1 className="text-[35px] font-medium sm:text-5xl md:text-6xl lg:text-8xl tracking-wider leading-tight md:mb-8">
             СТУДИЯ
@@ -207,10 +158,7 @@ export default function Hero() {
           </p>
           <div className="flex mt-6 justify-start flex-col-reverse md:flex-row">
             <div className="flex items-center gap-4 mt-6">
-              <button
-                className="w-8 h-8 rounded-full border border-white flex items-center justify-center"
-                aria-label="Previous"
-              >
+              <button className="w-8 h-8 rounded-full border border-white flex items-center justify-center" aria-label="Previous">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -249,15 +197,12 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Modal Navigation */}
       <div
         className={cn(
           "fixed inset-0 z-30 transition-transform duration-500 ease-in-out",
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
-        {/* Background Image with Dark Blur Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/modal.png"
@@ -266,11 +211,9 @@ export default function Hero() {
             fill
             priority
           />
-          <div className="absolute inset-0 bg-[#101420]/70 "></div>
+          <div className="absolute inset-0 bg-[#101420]/70"></div>
         </div>
-
         <div className="relative h-full w-full flex flex-col">
-          {/* Close Button */}
           <button
             onClick={toggleMenu}
             className="absolute top-4 right-4 md:top-6 md:right-8 bg-[#c2000a] h-8 w-8 flex items-center justify-center text-white"
@@ -292,8 +235,6 @@ export default function Hero() {
               />
             </svg>
           </button>
-
-          {/* Navigation Links */}
           <div className="flex flex-col justify-center max-w-sm h-full px-6 md:px-12 space-y-4 md:space-y-6">
             <Link
               href="#home"
@@ -368,8 +309,6 @@ export default function Hero() {
               Контакты
             </Link>
           </div>
-
-          {/* Red Line */}
           <div className="absolute bottom-12 left-0 right-0 h-px bg-[#c2000a]"></div>
         </div>
       </div>
