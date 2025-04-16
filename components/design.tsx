@@ -33,7 +33,7 @@ function Design() {
 	}, [])
 	return (
 		<div>
-			<div className='container my-10'>
+			<div className='px-2 max-w-screen-2xl mx-auto my-10' id='design'>
 				{/* Top divider */}
 				<Carousel
 					opts={{
@@ -41,7 +41,7 @@ function Design() {
 					}}
 					className='w-full '
 				>
-					<CarouselContent className='w-full'>
+					<CarouselContent className='w-full '>
 						{design &&
 							design.map(item => (
 								<CarouselItem className='w-full' key={item.id}>

@@ -39,10 +39,10 @@ function Whywe() {
 		fetchData()
 	}, [])
 	return (
-		<div className='bg-white'>
+		<div className='bg-white '>
 			{' '}
-			<section className='relative container text-white py-16'>
-				<div className='absolute inset-0 z-0 md:w-12/12 mx-auto h-2/5  md:h-3/5 mt-12'>
+			<section className='relative container max-w-screen-2xl mx-auto text-white py-16'>
+				<div className='absolute inset-0 z-0 md:w-11/12 mx-auto h-2/5  md:h-3/5 mt-12'>
 					<Image
 						src='/whyus.png'
 						alt='Planet background'
@@ -171,7 +171,7 @@ function Whywe() {
 					</div>
 				</div>
 			</section>
-			<section className='relative container text-white md:mb-96 py-10 md:py-20'>
+			<section id='publications' className='relative container max-w-screen-2xl mx-auto text-white md:mb-96 py-10 md:py-20'>
 				<div className='absolute inset-0 z-0 md:w-10/12 mx-auto  bg-[#101420] h-96  mt-12'></div>{' '}
 				<div className='relative px-4 right-0 z-10 '>
 					<div className='max-w-5xl mx-auto relative  space-y-12 py-10 '>
@@ -246,7 +246,7 @@ function Whywe() {
 					</div>
 				</div>
 			</section>
-			<section className='w-full container max-w-7xl mx-auto md:p-14 px-4'>
+			<section className='w-full container max-w-screen-2xl mx-auto md:p-14 px-4'>
 				<div className='md:space-y-20 py-5 md:py-0'>
 					{/* Heading with border */}
 					<div className=' border-gray-200 pb-2'>

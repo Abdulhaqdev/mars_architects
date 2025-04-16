@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 function Aboutus() {
   return (
-    <div className="relative min-h-screen bg-gray-900 md:py-10 text-white">
+    <div className="relative md:max-h-[1750px]  bg-gray-900 md:py-10 text-white">
       {/* Background Image - Positioned Behind Content */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -17,7 +17,7 @@ function Aboutus() {
       </div>
 
       {/* Main Content - Positioned Above Background */}
-      <div className="relative z-10">
+      <div className="relative z-10 max-w-screen-2xl mx-auto container ">
         {/* First Section: Image + Text */}
         <section className="container grid grid-cols-1 md:grid-cols-2  md:mb-20 md:py-3">
           {/* Left Column - Image */}

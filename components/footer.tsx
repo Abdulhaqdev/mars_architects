@@ -36,7 +36,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#151921] text-gray-300 py-8 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-6xl container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo */}
         <div className="flex flex-col items-start">
           <div>

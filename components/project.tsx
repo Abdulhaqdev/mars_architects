@@ -36,8 +36,8 @@ function Project() {
 		fetchData()
 	}, [])
 	return (
-		<section className='w-full bg-white text-black py-16'>
-			<div className='container flex flex-col gap-10 '>
+		<section id='projects'  className=' w-full bg-white text-black py-16'>
+			<div className='container max-w-screen-2xl mx-auto flex flex-col gap-10 '>
 				<div className='flex items-start gap-6 md:gap-10'>
 					{/* Chiziq https://api.mars-architects.us/portfolio/architectural-projects/
 					 */}
@@ -79,8 +79,8 @@ function Project() {
 												alt='The Space Ship project'
 												objectFit='top'
 												width={1000}
-												height={500}
-												className='w-full h-[300px]  md:h-auto object-cover'
+												height={700}
+												className='w-full h-[300px]  md:h-full object-cover'
 											/>
 
 											{/* Project Navigation */}

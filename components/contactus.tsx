@@ -76,8 +76,8 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="w-full bg-[#101420] py-12 lg:py-24 xl:py-24">
-      <div className="container grid items-center gap-12 px-4 md:px-6 lg:grid-cols-2 xl:gap-24">
+    <div className="w-full bg-[#101420] py-12 lg:py-24 xl:py-24" id='contacts'>
+      <div className="max-w-6xl mx-auto grid items-center gap-12 px-4 md:px-6 lg:grid-cols-2 xl:gap-24">
         <div className="flex flex-col mx-auto gap-4 min-w-[300px]">
           <div className="space-y-2">
             <h1 className="text-2xl font-bold tracking-tighter sm:text-5xl text-white">

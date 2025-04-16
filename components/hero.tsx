@@ -50,9 +50,9 @@ export default function Hero() {
   };
 
   return (
-    <main className="h-[700px] relative 3xl:container text-white overflow-hidden">
+    <main className="min-h-[700px] relative 3xl:max-w-screen-2xl mx-auto text-white overflow-hidden">
       {/* Navigation */}
-      <nav className="flex justify-between container h-24 items-center w-full md:px-2 py-4 md:py-6 z-20">
+      <nav id='home' className=" flex justify-between container h-24 items-center w-full md:px-2 py-4 md:py-6 z-20">
         {/* Logo */}
         <div>
           <Image
@@ -266,7 +266,7 @@ export default function Hero() {
             fill
             priority
           />
-          <div className="absolute inset-0 bg-[#101420]/80 backdrop-blur-sm"></div>
+          <div className="absolute inset-0 bg-[#101420]/70 "></div>
         </div>
 
         <div className="relative h-full w-full flex flex-col">
@@ -297,6 +297,7 @@ export default function Hero() {
           <div className="flex flex-col justify-center max-w-sm h-full px-6 md:px-12 space-y-4 md:space-y-6">
             <Link
               href="#home"
+              onClick={toggleMenu}
               className={cn(
                 "text-xl md:text-2xl transition-colors",
                 currentHash === "#home"
@@ -308,6 +309,7 @@ export default function Hero() {
             </Link>
             <Link
               href="#about"
+              onClick={toggleMenu}
               className={cn(
                 "text-xl md:text-2xl transition-colors",
                 currentHash === "#about"
@@ -319,6 +321,7 @@ export default function Hero() {
             </Link>
             <Link
               href="#projects"
+              onClick={toggleMenu}
               className={cn(
                 "text-xl md:text-2xl transition-colors",
                 currentHash === "#projects"
@@ -330,6 +333,7 @@ export default function Hero() {
             </Link>
             <Link
               href="#design"
+              onClick={toggleMenu}
               className={cn(
                 "text-xl md:text-2xl transition-colors",
                 currentHash === "#design"
@@ -341,6 +345,7 @@ export default function Hero() {
             </Link>
             <Link
               href="#publications"
+              onClick={toggleMenu}
               className={cn(
                 "text-xl md:text-2xl transition-colors",
                 currentHash === "#publications"
@@ -352,6 +357,7 @@ export default function Hero() {
             </Link>
             <Link
               href="#contacts"
+              onClick={toggleMenu}
               className={cn(
                 "text-xl md:text-2xl transition-colors",
                 currentHash === "#contacts"
