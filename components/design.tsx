@@ -1,15 +1,21 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { use, useEffect, useState } from 'react'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './ui/carousel'
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from './ui/carousel'
 
 function Design() {
-  interface design {
-    id: number
-    name: string
-    description: string
-    image: string
-  }
+	interface design {
+		id: number
+		name: string
+		description: string
+		image: string
+	}
 	const [design, setDesign] = useState<design[]>([])
 	useEffect(() => {
 		const fetchData = async () => {
@@ -19,7 +25,6 @@ function Design() {
 				)
 				const data = await res.json()
 				setDesign(data.data)
-        console.log(data.data)
 			} catch (error) {
 				console.error('Error fetching design data:', error)
 			}
@@ -37,9 +42,9 @@ function Design() {
 					className='w-full '
 				>
 					<CarouselContent className='w-full'>
-							{design &&
-								design.map(item => (
-                  <CarouselItem className='w-full'>
+						{design &&
+							design.map(item => (
+								<CarouselItem className='w-full' key={item.id}>
 									<div className='flex w-full flex-col md:flex-row gap-14'>
 										{/* Left column - Text content */}
 										<div className='space-y-2 md:w-2/5'>
@@ -89,32 +94,33 @@ function Design() {
 
 											{/* Navigation dots */}
 
-											<div className='flex flex-col md:flex-row'>
-                      <div className='flex items-center  gap-4 mt-6 relative'>
-										<CarouselPrevious />
-
-										<CarouselNext />
-									</div>
+											<div className='flex   flex-col      md:flex-row'>
+												<div className='flex items-end ml-20  w-14 justify-start   gap-4 mt-6 relative'>
+													<CarouselPrevious />
+													<CarouselNext />
+												</div>
 
 												{/* Project description */}
 												<div className='w-full flex  justify-center'>
 													<div className='mt-6 md:ml-24 max-w-xl flex flex-col gap-3 '>
-														<h2 className='text-3xl font-bold'>
-                              {item.name}
-														</h2>
-                            {item.description.split('\n').map((text: string, index: number) => (
-                              <p key={index} className='text-sm leading-relaxed mb-4'> 
-                                {text}
-                              </p>
-                            ))}
-														
+														<h2 className='text-3xl font-bold'>{item.name}</h2>
+														{item.description
+															.split('\n')
+															.map((text: string, index: number) => (
+																<p
+																	key={index}
+																	className='text-sm leading-relaxed mb-4'
+																>
+																	{text}
+																</p>
+															))}
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-						</CarouselItem>
-								))}
+								</CarouselItem>
+							))}
 					</CarouselContent>
 				</Carousel>
 			</div>

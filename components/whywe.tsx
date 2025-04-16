@@ -189,7 +189,7 @@ function Whywe() {
 									</h2>
 								</div>
 								<div className='flex gap-2'>
-									<div className='flex items-center  gap-4 mt-6 relative'>
+									<div className='flex items-center  ml-10 gap-4 mt-6 relative'>
 										<CarouselPrevious />
 
 										<CarouselNext />

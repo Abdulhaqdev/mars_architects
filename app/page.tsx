@@ -6,6 +6,7 @@ import Project from '@/components/project'
 import Design from '@/components/design'
 import Whywe from '@/components/whywe'
 import Footer from '@/components/footer'
+import ContactUs from '@/components/contactus'
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
 				<Project/>
 				<Design/>
 				<Whywe/>
+				<ContactUs/>
 				<Footer/>
     </main>
   )

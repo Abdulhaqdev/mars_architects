@@ -29,7 +29,6 @@ function Project() {
 					'https://api.mars-architects.us/portfolio/architectural-projects/'
 				)
 				setPprtfolio(res.data.data)
-				console.log(res.data.data)
 			} catch (error) {
 				console.error('Error fetching footer data:', error)
 			}
