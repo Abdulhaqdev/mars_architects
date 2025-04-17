@@ -210,6 +210,7 @@ export default function Hero({ footerData }: HeroProps) {
             className="object-cover"
             fill
             priority
+            sizes="absolute inset-0"
           />
           <div className="absolute inset-0 bg-[#101420]/70"></div>
         </div>
@@ -219,31 +220,22 @@ export default function Hero({ footerData }: HeroProps) {
             className="absolute top-4 right-4 md:top-6 md:right-8 bg-[#c2000a] h-8 w-8 flex items-center justify-center text-white"
             aria-label="Close menu"
           >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M18 6L6 18M6 6L18 18"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 7.75H3C2.59 7.75 2.25 7.41 2.25 7C2.25 6.59 2.59 6.25 3 6.25L21 6.25C21.41 6.25 21.75 6.59 21.75 7C21.75 7.41 21.41 7.75 21 7.75Z" fill="white"/>
+<path d="M18 12.75H6C5.59 12.75 5.25 12.41 5.25 12C5.25 11.59 5.59 11.25 6 11.25H18C18.41 11.25 18.75 11.59 18.75 12C18.75 12.41 18.41 12.75 18 12.75Z" fill="white"/>
+<path d="M14 17.75H10C9.59 17.75 9.25 17.41 9.25 17C9.25 16.59 9.59 16.25 10 16.25H14C14.41 16.25 14.75 16.59 14.75 17C14.75 17.41 14.41 17.75 14 17.75Z" fill="white"/>
+</svg>
+
           </button>
-          <div className="flex flex-col justify-center max-w-sm h-full px-6 md:px-12 space-y-4 md:space-y-6">
+          <div className="flex flex-col justify-center m-20 max-w-md  h-full px-6 md:px-12 space-y-4 md:space-y-6">
             <Link
               href="#home"
               onClick={toggleMenu}
               className={cn(
-                "text-xl md:text-2xl transition-colors",
+                "text-xl md:text-3xl transition-colors block",
                 currentHash === "#home"
-                  ? "text-[#c2000a] border-b-2 border-[#c2000a] pb-1"
-                  : "text-white hover:text-[#c2000a]"
+                  ? "border-b-2 border-[#c2000a] pb-1"
+                  : "text-white "
               )}
             >
               Главная
@@ -252,10 +244,10 @@ export default function Hero({ footerData }: HeroProps) {
               href="#about"
               onClick={toggleMenu}
               className={cn(
-                "text-xl md:text-2xl transition-colors",
+                "text-xl md:text-3xl transition-colors",
                 currentHash === "#about"
-                  ? "text-[#c2000a] border-b-2 border-[#c2000a] pb-1"
-                  : "text-white hover:text-[#c2000a]"
+                  ? " border-b-2 border-[#c2000a] pb-1"
+                  : "text-white "
               )}
             >
               О нас
@@ -264,10 +256,10 @@ export default function Hero({ footerData }: HeroProps) {
               href="#projects"
               onClick={toggleMenu}
               className={cn(
-                "text-xl md:text-2xl transition-colors",
+                "text-xl md:text-3xl transition-colors",
                 currentHash === "#projects"
-                  ? "text-[#c2000a] border-b-2 border-[#c2000a] pb-1"
-                  : "text-white hover:text-[#c2000a]"
+                  ? " border-b-2 border-[#c2000a] pb-1"
+                  : "text-white "
               )}
             >
               Архитектурные проекты
@@ -276,10 +268,10 @@ export default function Hero({ footerData }: HeroProps) {
               href="#design"
               onClick={toggleMenu}
               className={cn(
-                "text-xl md:text-2xl transition-colors",
+                "text-xl md:text-3xl transition-colors",
                 currentHash === "#design"
-                  ? "text-[#c2000a] border-b-2 border-[#c2000a] pb-1"
-                  : "text-white hover:text-[#c2000a]"
+                  ? " border-b-2 border-[#c2000a] pb-1"
+                  : "text-white "
               )}
             >
               Дизайн интерьера
@@ -288,10 +280,10 @@ export default function Hero({ footerData }: HeroProps) {
               href="#publications"
               onClick={toggleMenu}
               className={cn(
-                "text-xl md:text-2xl transition-colors",
+                "text-xl md:text-3xl transition-colors",
                 currentHash === "#publications"
                   ? "text-[#6c5758] border-b-2 border-[#c2000a] pb-1"
-                  : "text-white hover:text-[#6c5758]"
+                  : "text-white "
               )}
             >
               Публикации
@@ -300,16 +292,16 @@ export default function Hero({ footerData }: HeroProps) {
               href="#contacts"
               onClick={toggleMenu}
               className={cn(
-                "text-xl md:text-2xl transition-colors",
+                "text-xl md:text-3xl transition-colors",
                 currentHash === "#contacts"
                   ? "text-[#c2000a] border-b-2 border-[#c2000a] pb-1"
-                  : "text-white hover:text-[#c2000a]"
+                  : "text-white "
               )}
             >
               Контакты
             </Link>
+          <div className="absolute bottom-12 left-28 right-0 h-px bg-[#c2000a]"></div>
           </div>
-          <div className="absolute bottom-12 left-0 right-0 h-px bg-[#c2000a]"></div>
         </div>
       </div>
     </main>

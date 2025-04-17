@@ -34,14 +34,14 @@ export default function Design({ designData }: DesignProps) {
               <CarouselItem className="w-full" key={item.id}>
                 <div className="flex w-full flex-col md:flex-row gap-14">
                   <div className="space-y-2 md:w-2/5">
-                    <div className="space-y-4">
-                      <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+                    <div className="md:space-y-10 space-y-4">
+                      <h1 className="text-4xl md:text-6xl  leading-tight">
                         ДИЗАЙН
                         <br />
                         ИНТЕРЬЕРА
                       </h1>
                       <div className="mt-6 max-w-sm">
-                        <p className="text-sm leading-relaxed">
+                        <p className="text-sm  leading-relaxed">
                           Мы создаем интерьеры, которые отражают стиль, характер и образ
                           жизни наших клиентов. В нашей работе мы сочетаем эстетику,
                           функциональность и современные технологии, чтобы каждый проект был
@@ -73,7 +73,7 @@ export default function Design({ designData }: DesignProps) {
                       priority
                     />
                     <div className="flex flex-col md:flex-row">
-                      <div className="flex items-end ml-20 w-14 justify-start gap-4 mt-6 relative">
+                      <div className="flex items-end ml-20 w-2 justify-start  mt-6 relative">
                         <CarouselPrevious />
                         <CarouselNext />
                       </div>

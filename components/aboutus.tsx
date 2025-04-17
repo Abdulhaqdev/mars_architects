@@ -45,7 +45,7 @@ function Aboutus() {
                 практичны. Наша команда профессионалов стремится к совершенству
                 в каждом проекте.
               </p>
-              <p>
+              <p className='font'>
                 Каждый проект — это уникальное путешествие, которое начинается с
                 понимания ваших потребностей и заканчивается созданием
                 пространства, которое превосходит ваши ожидания.
@@ -58,9 +58,9 @@ function Aboutus() {
         <section className="container py-7 md:py-0 mt-16">
           {/* Heading - Centered Across the Section */}
 
-          <div className="flex flex-col-reverse gap-20 md:grid md:grid-cols-2  ">
+          <div className="flex flex-col-reverse gap-24 md:grid md:grid-cols-2  ">
             {/* Left Column - Text */}
-            <div className="">
+            <div className="leading-tight ">
               <h2 className="text-5xl md:text-6xl font-bold mb-10 ">
                 Творческий путь
               </h2>
@@ -72,51 +72,51 @@ function Aboutus() {
                     Кефхаянц
                   </h3>
                 </div>
-                <p className="text-sm text-[#C4C4C4] ">
+                <p className="text-sm text-[#C4C4C4] w-11/12">
                   Я родился в 1988 году в городе Ташкент. Закончил в 2005 году
                   школу и поступил в ТАСИ на факультет дизайн архитектурной
                   среды. Закончил институт в 2009 году с одним из самых высоких
                   баллов
                 </p>
-                <p className="text-sm text-[#C4C4C4] ">
+                <p className="text-sm text-[#C4C4C4] w-11/12 ">
                   В 2008 году занял первое место на Международном архитектур-ном
                   конкурсе MACCA - 1 место (диплом) Минск, Беларусь.
                 </p>
-                <p className="flex items-start ml-8">
+                <p className="flex items-start ml-8 leading-tight ">
                   <span className="inline-block p-1 bg-red-600 rounded-full mr-3 mt-2"></span>
                   Свою харизму и талант Гоустфасер раскрывает в 2006 году, когда
                   впервые выступает на сцене. Занимая первое место в 2008 году,
                   он становится известным в кругах профессионалов.
                 </p>
-                <p className="flex items-start ml-8">
+                <p className="flex items-start ml-8 leading-tight ">
                   <span className="inline-block p-1 bg-red-600 rounded-full mr-3 mt-2"></span>
                   В 2009 году, после победы на международном конкурсе, он
                   становится известным не только в России, но и за её пределами.
                 </p>
-                <p className="flex items-start ml-8">
+                <p className="flex items-start ml-8 leading-tight ">
                   <span className="inline-block p-1 bg-red-600 rounded-full mr-3 mt-2"></span>
                   Уже в 2010 году Гоустфасер становится членом жюри на
                   международных конкурсах, а в 2012 году — главным судьёй на
                   чемпионате мира.
                 </p>
-                <p className="flex items-start ml-8">
+                <p className="flex items-start ml-8 leading-tight ">
                   <span className="inline-block p-1 bg-red-600 rounded-full mr-3 mt-2"></span>
                   Сегодня Гоустфасер продолжает вдохновлять миллионы людей по
                   всему миру, делясь своим опытом и знаниями.
                 </p>
-                <p className="text-sm">
+                <p className="text-sm w-11/12">
                   Свою первую работу и свой первый проект я получил в 2009 году
                   в возрасте 21 год, с этого момента и по сей день я занимаюсь
                   только одним делом, архитектурой и дизайном.
                 </p>
-                <p className="text-sm">
+                <p className="text-sm w-11/12">
                   На данным момент, я основал свою студию архитектуры и дизайна,
                   для реализации всего опыта и потенциала, накопленного годами.
                 </p>
               </div>
             </div>
             {/* Right Column - Image */}
-            <div className="relative h-[607px] md:h-[800px]">
+            <div className="relative md:w-11/12 h-[607px] md:h-[800px]">
               <Image
                 src="/aboutus2.png"
                 alt="Dmitry Arkadyev portrait"
