@@ -138,7 +138,7 @@ export default function ContactUs() {
             </div>
             {error && <p className="text-red-500 text-sm">{error}</p>}
             {success && <p className="text-green-500 text-sm">{success}</p>}
-            <Button size="lg" disabled={loading}>
+            <Button size="lg" disabled={loading} className='bg-[#c2000a] hover:bg-[#c2000a9b]'>
               {loading ? "Отправка..." : "Представлять на рассмотрение"}
             </Button>
           </form>

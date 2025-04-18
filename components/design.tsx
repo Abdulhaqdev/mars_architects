@@ -50,7 +50,7 @@ export default function Design({ designData }: DesignProps) {
                       </div>
                       <div>
                         <Link
-                          href="#"
+                          href="#contacts"
                           className="inline-block bg-[#c2000a] text-white px-8 py-3 text-sm font-medium hover:bg-opacity-90 transition-colors"
                         >
                           ОБСУДИТЬ ПРОЕКТ

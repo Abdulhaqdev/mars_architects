@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./ui/carousel";
+import Link from 'next/link'
 
 interface PortfolioData {
   id: number;
@@ -80,9 +81,15 @@ export default function Project({ portfolioData }: ProjectProps) {
                         </div>
                       </div>
                       <div>
-                        <Button className= " bg-red-600 rounded-none hover:bg-red-700 font-light text-xs text-white">
+                        {/* <Button className= " bg-red-600 rounded-none hover:bg-red-700 font-light text-xs text-white"> */}
+                        <Link
+                          href="#contacts"
+                          className="inline-block bg-[#c2000a] text-white px-8 py-3 text-sm font-medium hover:bg-opacity-90 transition-colors"
+                        >
+                          
                           ОБСУДИТЬ ПРОЕКТ
-                        </Button>
+                        </Link>
+                        {/* </Button> */}
                       </div>
                     </div>
                   </div>
