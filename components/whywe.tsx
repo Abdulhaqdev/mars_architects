@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./ui/carousel";
+import Link from 'next/link'
 
 interface PublicationData {
   id: number;
@@ -157,9 +158,13 @@ export default function Whywe({ publicationsData }: WhyweProps) {
                               {post.title}
                             </h2>
                             <div className="flex items-center pt-4">
-                              <p className="text-[#ffffff] text-sm uppercase tracking-wider mr-3">
+                            <Link
+                          href="#contacts"
+                          className="text-[#ffffff] text-sm uppercase tracking-wider mr-3"
+                        >
+
                                 ПОДРОБНЕЕ
-                              </p>
+                        </Link>
                               <ArrowRight className="text-[#ffffff] w-6 h-6" />
                             </div>
                           </div>
