@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import {
   Carousel,
   CarouselContent,
@@ -20,60 +22,49 @@ interface DesignProps {
 }
 
 export default function Design({ designData }: DesignProps) {
+  const { t } = useTranslation();
+
   return (
     <div>
-      <div className="px-22 container max-w-screen-2xl mx-auto my-10" id="design">
-        <Carousel
-          opts={{
-            align: "start",
-          }}
-          className="w-full"
-        >
-          <CarouselContent className="w-full ">
+      <div className="container max-w-screen-2xl mx-auto my-8 md:my-10" id="design">
+        <Carousel opts={{ align: "start" }} className="w-full">
+          <CarouselContent className="w-full">
             {designData.map((item) => (
               <CarouselItem className="w-full" key={item.id}>
-                <div className="flex w-full flex-col md:flex-row gap-14">
-                  <div className="space-y-2 md:w-2/5">
-                    <div className="md:space-y-10 space-y-4">
-                      <h1 className="text-4xl md:text-6xl  leading-tight">
-                        ДИЗАЙН
-                        <br />
-                        ИНТЕРЬЕРА
+                <div className="flex w-full flex-col lg:flex-row gap-8 lg:gap-14">
+                  {/* Text Section */}
+                  <div className="space-y-4 lg:w-2/5">
+                    <div className="space-y-4 md:space-y-6 lg:space-y-10">
+                      <h1 className="text-3xl md:text-4xl lg:text-6xl leading-tight">
+                        {t("design.title")}
                       </h1>
-                      <div className="mt-6 max-w-sm">
-                        <p className="text-sm  leading-relaxed">
-                          Мы создаем интерьеры, которые отражают стиль, характер и образ
-                          жизни наших клиентов. В нашей работе мы сочетаем эстетику,
-                          функциональность и современные технологии, чтобы каждый проект был
-                          уникальным и комфортным.
+                      <div className="lg:max-w-sm">
+                        <p className="text-sm md:text-base leading-relaxed">
+                          {t("design.description")}
                         </p>
                       </div>
-                      <div>
-                        <Link
-                          href="#contacts"
-                          className="inline-block bg-[#c2000a] text-white px-8 py-3 text-sm font-medium hover:bg-opacity-90 transition-colors"
-                        >
-                          ОБСУДИТЬ ПРОЕКТ
-                        </Link>
-                      </div>
                     </div>
-                    <div className="text-start md:text-end">
-                      <span className="text-[#d6d6d6] opacity-30 text-8xl font-light">
+                    <div className="text-start lg:text-end">
+                      <span className="text-[#d6d6d6] opacity-30 text-6xl md:text-7xl lg:text-8xl font-light">
                         {item.id < 10 ? `0${item.id}` : item.id}
                       </span>
                     </div>
                   </div>
-                  <div className="md:w-3/5">
-                    <Image
-                      src={item.image}
-                      width={800}
-                      height={500}
-                      alt="Luxury interior design of a dining room"
-                      className="w-full h-auto object-cover"
-                      priority
-                    />
+
+                  {/* Image and Description Section */}
+                  <div className="lg:w-3/5">
+                    <div className="relative aspect-[8/5] w-full">
+                      <Image
+                        src={item.image}
+                        alt={item.name}
+                        fill
+                        className="w-full h-full object-cover"
+                        priority
+                        sizes="(max-width: 1024px) 100vw, 60vw"
+                      />
+                    </div>
                     <div className="flex flex-col md:flex-row">
-                      <div className="flex items-end ml-20 w-2 justify-start  mt-6 relative">
+                      <div className="flex items-end ml-20 w-2 justify-start mt-6 relative">
                         <CarouselPrevious />
                         <CarouselNext />
                       </div>

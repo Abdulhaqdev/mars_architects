@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Instagram, Clock, Phone, Mail, MapPin } from "lucide-react";
+import { Clock, Phone, Mail, MapPin } from "lucide-react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 interface FooterData {
   id: number;
@@ -22,6 +23,8 @@ interface FooterProps {
 }
 
 export default function Footer({ footerData }: FooterProps) {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-[#151921] text-gray-300 py-8 px-6">
       <div className="max-w-6xl container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -29,7 +32,7 @@ export default function Footer({ footerData }: FooterProps) {
           <div>
             <Image
               src="/logogray.png"
-              alt="Mars architecture logo"
+              alt={t("footer.logoAlt")}
               height={150}
               width={80}
               className=""
@@ -38,7 +41,7 @@ export default function Footer({ footerData }: FooterProps) {
           </div>
         </div>
         <div className="md:col-span-1">
-          <h3 className="text-sm font-medium mb-4">Контактные данные</h3>
+          <h3 className="text-sm font-medium mb-4">{t("footer.contactDetails")}</h3>
           <ul className="space-y-3">
             <li className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
@@ -55,14 +58,14 @@ export default function Footer({ footerData }: FooterProps) {
           </ul>
         </div>
         <div className="md:col-span-1">
-          <h3 className="text-sm font-medium mb-4">Режим работы</h3>
+          <h3 className="text-sm font-medium mb-4">{t("footer.workingHours")}</h3>
           <div className="flex items-center gap-2">
             <Clock className="h-4 w-4" />
             <span className="text-sm">{footerData?.working_hours || "Loading..."}</span>
           </div>
         </div>
         <div className="md:col-span-1">
-          <h3 className="text-sm font-medium mb-4">Мы тут</h3>
+          <h3 className="text-sm font-medium mb-4">{t("footer.socialMedia")}</h3>
           <div className="flex items-center gap-4">
             {footerData?.facebook && (
               <Link

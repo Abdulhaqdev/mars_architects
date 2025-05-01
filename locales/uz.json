@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "title": "DIZAYN VA ARXITEKTURA STUDIYASI",
+    "description": "Biz ilhomlantiradigan, hayotni qulayroq qiladigan arxitektura va interyerlarni yaratamiz",
+    "nav": {
+      "home": "Bosh sahifa",
+      "about": "Biz haqimizda",
+      "projects": "Arxitektura loyihalari",
+      "design": "Interyer dizayni",
+      "publications": "Nashrlar",
+      "contacts": "Kontaktlar"
+    }
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "description1": "Biz ijodiy imkoniyatlar va funksionallik birlashadigan, ilhomlantiruvchi va kundalik hayotni o'zgartiruvchi fazolarni yaratadigan arxitektura studiyasimiz.",
+    "description2": "Biz nafaqat estetik jihatdan yoqimli, balki amaliy bo'lgan turar joy va tijorat ob'ektlari uchun yechimlar ishlab chiqishga e'tibor qaratamiz. Mutaxassislar jamoamiz har bir loyihada mukammallikka intiladi.",
+    "description3": "Har bir loyiha sizning ehtiyojlaringizni tushunishdan boshlanib, kutganlaringizdan oshib ketadigan fazo yaratish bilan yakunlanadigan noyob sayohatdir.",
+    "creativePath": {
+      "title": "Ijodiy yo'l",
+      "role": "Arxitekt-dizayner",
+      "name": "Dmitriy Arkadyevich Kefkhayants",
+      "description1": "Men 1988 yilda Toshkent shahrida tug'ilganman. 2005 yilda maktabni tamomladim va TASIga Arxitektura muhiti dizayni fakultetiga o'qishga kirdim. 2009 yilda institutni eng yuqori ballardan biri bilan tamomladim.",
+      "description2": "2008 yilda Minsk, Belarusda bo'lib o'tgan Xalqaro arxitektura tanlovida MACCA - 1-o'rin (diplom) ni qo'lga kiritdim.",
+      "description3": "O'zimning xarizm va iste'dodimni 2006 yilda birinchi marta sahnada chiqish qilganimda ochdim. 2008 yilda birinchi o'rinni qo'lga kiritib, mutaxassislar orasida tanildim.",
+      "description4": "2009 yilda xalqaro tanlovda g'alaba qozonganimdan so'ng, nafaqat Rossiyada, balki xorijda ham e'tirofga sazovor bo'ldim.",
+      "description5": "2010 yilda xalqaro tanlovlarda hakamlar a'zosi bo'ldim, 2012 yilda esa jahon chempionatida bosh hakam bo'ldim.",
+      "description6": "Bugun men o'z tajribam va bilimlarimni baham ko'rib, dunyo bo'ylab millionlab odamlarni ilhomlantirishda davom etyapman.",
+      "description7": "Birinchi ish va loyihamni 2009 yilda 21 yoshimda oldim va o'sha paytdan beri faqat arxitektura va dizayn bilan shug'ullanyapman.",
+      "description8": "Hozirda men yillar davomida to'plangan tajriba va salohiyatni ro'yobga chiqarish uchun o'z arxitektura va dizayn studiyamni tashkil qildim."
+    },
+    "backgroundAlt": "Sayyora foni",
+    "image1Alt": "Arxitektura dizayni",
+    "image2Alt": "Dmitriy Arkadyevich portreti"
+  },
+  "projects": {
+    "title": "Arxitektura loyihalari",
+    "description": "Biz estetika, funksionallik va innovatsion texnologiyalarni uyg'unlashtirgan arxitektura yaratamiz. Studiyamiz portfelida zamonaviy tendensiyalar va mijozlarning individual ehtiyojlari asosida ishlab chiqilgan turar joy, tijorat va jamoat joylari uchun noyob loyihalar mavjud."
+  },
+  "publications": {
+    "title": "Nashrlar",
+    "clients": {
+      "title": "Bizning mijozlar",
+      "newsweekAlt": "Newsweek logotipi",
+      "timeAlt": "TIME logotipi",
+      "newYorkerAlt": "The New Yorker logotipi",
+      "bloombergAlt": "Bloomberg logotipi",
+      "politicoAlt": "POLITICO logotipi"
+    }
+  },
+  "design": {
+    "title": "Interyer dizayni",
+    "description": "Biz mijozlarimizning uslubi, xarakteri va turmush tarzini aks ettiruvchi interyerlar yaratamiz. Ishimizda estetika, funksionallik va zamonaviy texnologiyalarni birlashtirib, har bir loyihaning noyob va qulay bo'lishini ta'minlaymiz."
+  },
+  "contacts": {
+    "title": "Biz bilan bog'laning",
+    "description": "Savollaringiz bormi? Xizmatlarimiz haqida ko'proq bilmoqchimisiz? Quyidagi forma orqali bizga yozing, biz siz bilan imkon qadar tezroq bog'lanamiz.",
+    "labels": {
+      "name": "Ism",
+      "phone": "Telefon raqami",
+      "email": "Elektron pochta",
+      "message": "Xabar"
+    },
+    "placeholders": {
+      "name": "Ismingizni kiriting",
+      "phone": "Telefon raqamingizni kiriting",
+      "email": "Elektron pochta manzilingizni kiriting",
+      "message": "Xabaringizni kiriting"
+    },
+    "errors": {
+      "required": "Iltimos, barcha maydonlarni to'ldiring.",
+      "invalidEmail": "Iltimos, haqiqiy elektron pochta manzilini kiriting.",
+      "submitError": "Xabar yuborishda xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
+    },
+    "success": "Xabar muvaffaqiyatli yuborildi! Tez orada siz bilan bog'lanamiz.",
+    "button": {
+      "submit": "Yuborish",
+      "loading": "Yuborilmoqda..."
+    }
+  },
+  "footer": {
+    "contactDetails": "Bog'lanish uchun ma'lumotlar",
+    "workingHours": "Ish vaqti",
+    "socialMedia": "Biz shu yerdamiz",
+    "logoAlt": "Mars arxitektura logotipi"
+  }
+}
