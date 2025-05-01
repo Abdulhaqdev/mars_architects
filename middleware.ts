@@ -6,31 +6,34 @@ acceptLanguage.languages(languages);
 
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|site.webmanifest|.*\\.(?:png|jpg|jpeg|svg|gif|ico|webp)).*)'
-  ]
+    '/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|site.webmanifest|.*\\.(?:png|jpg|jpeg|svg|gif|ico|webp)).*)',
+  ],
 };
 
-export function middleware(req :any) {
+export function middleware(req: any) {
   let lng;
-  if (req.cookies.has(cookieName)) lng = acceptLanguage.get(req.cookies.get(cookieName).value);
+  const cookieLng = req.cookies.get(cookieName)?.value;
+  if (cookieLng) lng = acceptLanguage.get(cookieLng);
   if (!lng) lng = acceptLanguage.get(req.headers.get('Accept-Language'));
   if (!lng) lng = fallbackLng;
 
-  // Redirect if lng in path is not supported
-  if (
-    !languages.some(loc => req.nextUrl.pathname.startsWith(`/${loc}`)) &&
-    !req.nextUrl.pathname.startsWith('/_next')
-  ) {
-    return NextResponse.redirect(new URL(`/${lng}${req.nextUrl.pathname}`, req.url));
+  const pathname = req.nextUrl.pathname;
+  const currentLng = languages.find((loc) => pathname.startsWith(`/${loc}`));
+
+  // Agar til allaqachon URL da bo'lsa va cookie bilan mos kelsa, redirect qilish shart emas
+  if (currentLng === lng) {
+    return NextResponse.next();
   }
 
-  if (req.headers.has('referer')) {
-    const refererUrl = new URL(req.headers.get('referer'));
-    const lngInReferer = languages.find((l) => refererUrl.pathname.startsWith(`/${l}`));
-    const response = NextResponse.next();
-    if (lngInReferer) response.cookies.set(cookieName, lngInReferer);
-    return response;
+  // Redirect faqat til noto'g'ri bo'lsa
+  if (!currentLng && !pathname.startsWith('/_next')) {
+    return NextResponse.redirect(new URL(`/${lng}${pathname}`, req.url));
   }
 
-  return NextResponse.next();
+  const response = NextResponse.next();
+  if (cookieLng !== lng) {
+    response.cookies.set(cookieName, lng);
+  }
+
+  return response;
 }
