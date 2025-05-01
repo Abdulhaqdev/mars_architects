@@ -7,6 +7,5 @@ export function getOptions(lng = fallbackLng) {
     supportedLngs: languages,
     fallbackLng,
     lng,
-
   };
 }
