@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "DIZAYN VA ARXITEKTURA STUDIYASI",
-    "description": "Biz ilhomlantiradigan, hayotni qulayroq qiladigan arxitektura va interyerlarni yaratamiz",
+    "description": "Biz ilhomlantiruvchi va hayotni qulaylashtiruvchi arxitektura va interyerlar yaratamiz",
     "nav": {
       "home": "Bosh sahifa",
       "about": "Biz haqimizda",
@@ -13,50 +13,83 @@
   },
   "about": {
     "title": "Biz haqimizda",
-    "description1": "Biz ijodiy imkoniyatlar va funksionallik birlashadigan, ilhomlantiruvchi va kundalik hayotni o'zgartiruvchi fazolarni yaratadigan arxitektura studiyasimiz.",
-    "description2": "Biz nafaqat estetik jihatdan yoqimli, balki amaliy bo'lgan turar joy va tijorat ob'ektlari uchun yechimlar ishlab chiqishga e'tibor qaratamiz. Mutaxassislar jamoamiz har bir loyihada mukammallikka intiladi.",
-    "description3": "Har bir loyiha sizning ehtiyojlaringizni tushunishdan boshlanib, kutganlaringizdan oshib ketadigan fazo yaratish bilan yakunlanadigan noyob sayohatdir.",
+    "description1": "Biz ijodiy imkoniyatlar va funksionallik birlashadigan arxitektura studiyasimiz, bu esa ilhomlantiruvchi va kundalik hayotni o'zgartiruvchi makonlar yaratadi.",
+    "description2": "Biz turar joy va tijorat ob'ektlari uchun nafaqat estetik jihatdan jozibador, balki amaliy bo'lgan yechimlarni ishlab chiqishga e'tibor qaratamiz. Mutaxassislar jamoamiz har bir loyihada mukammallikka intiladi.",
+    "description3": "Har bir loyiha - bu sizning ehtiyojlaringizni tushunishdan boshlanadigan va sizning kutganlaringizdan oshib ketadigan makon yaratish bilan yakunlanadigan noyob sayohatdir.",
     "creativePath": {
       "title": "Ijodiy yo'l",
-      "role": "Arxitekt-dizayner",
+      "role": "Arxitektor-dizayner",
       "name": "Dmitriy Arkadyevich Kefkhayants",
-      "description1": "Men 1988 yilda Toshkent shahrida tug'ilganman. 2005 yilda maktabni tamomladim va TASIga Arxitektura muhiti dizayni fakultetiga o'qishga kirdim. 2009 yilda institutni eng yuqori ballardan biri bilan tamomladim.",
-      "description2": "2008 yilda Minsk, Belarusda bo'lib o'tgan Xalqaro arxitektura tanlovida MACCA - 1-o'rin (diplom) ni qo'lga kiritdim.",
-      "description3": "O'zimning xarizm va iste'dodimni 2006 yilda birinchi marta sahnada chiqish qilganimda ochdim. 2008 yilda birinchi o'rinni qo'lga kiritib, mutaxassislar orasida tanildim.",
-      "description4": "2009 yilda xalqaro tanlovda g'alaba qozonganimdan so'ng, nafaqat Rossiyada, balki xorijda ham e'tirofga sazovor bo'ldim.",
+      "description1": "Men 1988 yilda Toshkent shahrida tug'ilganman. 2005 yilda maktabni tamomladim va TASIga arxitektura muhiti dizayni fakultetiga o'qishga kirdim. 2009 yilda institutni eng yuqori ballardan biri bilan tugatdim.",
+      "description2": "2008 yilda Xalqaro arxitektura tanlovida MACCA - 1-o'rin (diplom) Minsk, Belarusda qo'lga kiritdim.",
+      "description3": "O'z xarizmati va iste'dodimni 2006 yilda birinchi marta sahnada chiqish qilganimda ochib berdim. 2008 yilda birinchi o'rinni egallab, mutaxassislar doirasida mashhur bo'ldim.",
+      "description4": "2009 yilda xalqaro tanlovda g'olib bo'lgach, nafaqat Rossiyada, balki undan tashqarida ham tanildim.",
       "description5": "2010 yilda xalqaro tanlovlarda hakamlar a'zosi bo'ldim, 2012 yilda esa jahon chempionatida bosh hakam bo'ldim.",
-      "description6": "Bugun men o'z tajribam va bilimlarimni baham ko'rib, dunyo bo'ylab millionlab odamlarni ilhomlantirishda davom etyapman.",
-      "description7": "Birinchi ish va loyihamni 2009 yilda 21 yoshimda oldim va o'sha paytdan beri faqat arxitektura va dizayn bilan shug'ullanyapman.",
-      "description01": "Hozirda men yillar davomida to'plangan tajriba va salohiyatni ro'yobga chiqarish uchun o'z arxitektura va dizayn studiyamni tashkil qildim.",
-      "description8": "2022 yil, Enter Engineering kompaniyasi, qurilish bo'limi boshlig'i va VZISOV 2019-2021 Epsilon Development Company MChJ, Toshkent/Qarshi viloyati. Lavozimi - Arxitektura-qurilish guruhi rahbari/Loyihaning bosh muhandisi.",
-      "description9":""
-    },
-    "backgroundAlt": "Sayyora foni",
-    "image1Alt": "Arxitektura dizayni",
-    "image2Alt": "Dmitriy Arkadyevich portreti"
+      "description6": "Bugungi kunda men o'z tajribam va bilimlarimni baham ko'rib, millionlab odamlarni ilhomlantirishda davom etyapman.",
+      "description7": "Birinchi ish va loyihamni 2009 yilda 21 yoshimda oldim, shu paytdan boshlab va bugungi kunga qadar faqat bir ish bilan, arxitektura va dizayn bilan shug'ullanyapman.",
+      "description8": "2023 yildan hozirgacha Arxitektura kompaniyasi MChJ 'Niiat', Toshkent, O'zbekiston Lavozim – Bosh arxitektor.",
+      "description9": "2022 yil 'Enter Engineering' kompaniyasi Fuqaro qurilishi va VZiSOV bo'yicha rahbar 2019-2021 MChJ 'Epsilont Development Company', Toshkent/Qarshi viloyati. Lavozim - Arxitektura-qurilish guruhi rahbari / Loyiha bosh muhandisi.",
+      "description10": "2017 yil iyun - 2019 yil sentyabr Arxitektura kompaniyasi MChJ 'Niiat', Toshkent, O'zbekiston Lavozim – Bosh arxitektor. 2015 yil yanvar - 2017 yil mart MChJ '",
+      "description01": "Hozirda men yillar davomida to'plangan tajriba va salohiyatni ro'yobga chiqarish uchun o'z arxitektura va dizayn studiyamni asos soldim"
+    }
   },
   "projects": {
     "title": "Arxitektura loyihalari",
-    "description": "Biz estetika, funksionallik va innovatsion texnologiyalarni uyg'unlashtirgan arxitektura yaratamiz. Studiyamiz portfelida zamonaviy tendensiyalar va mijozlarning individual ehtiyojlari asosida ishlab chiqilgan turar joy, tijorat va jamoat joylari uchun noyob loyihalar mavjud."
+    "description": "Biz estetika, funksionallik va innovatsion texnologiyalarni uyg'unlashtiruvchi arxitektura yaratamiz. Studiyamiz portfelida zamonaviy tendensiyalar va mijozlarning individual ehtiyojlari hisobga olingan holda ishlab chiqilgan turar joy, tijorat va jamoat makonlarining noyob loyihalari mavjud.",
+    "items": [
+      {
+        "id": 1,
+        "name": "Zamonaviy turar joy majmuasi",
+        "short_description": "Barqaror dizaynli zamonaviy turar joy majmuasi.",
+        "description": "Ushbu loyiha innovatsion arxitektura yechimlarini o'z ichiga oladi.\nU ekologik toza materiallar va energiya samaradorligiga ustunlik beradi."
+      },
+      {
+        "id": 2,
+        "name": "Tijorat markazi",
+        "short_description": "Biznes uchun dinamik tijorat makoni.",
+        "description": "Funksionallik va estetika uchun loyihalashtirilgan.\nAqlli operatsiyalar uchun zamonaviy texnologiyalarni o'z ichiga oladi."
+      }
+    ]
   },
   "publications": {
     "title": "Nashrlar",
+    "items": [
+      {
+        "id": 1,
+        "title": "Innovatsion arxitektura tendensiyalari",
+        "description": "Barqaror arxitekturadagi so'nggi tendensiyalarni o'rganuvchi maqola.",
+        "date": "2024-05-01"
+      },
+      {
+        "id": 2,
+        "title": "Kelajak dizayni",
+        "description": "Studiyamizning zamonaviy dizayn yondashuvi haqidagi maqola.",
+        "date": "2024-06-15"
+      }
+    ],
     "clients": {
-      "title": "Bizning mijozlar",
-      "newsweekAlt": "Newsweek logotipi",
-      "timeAlt": "TIME logotipi",
-      "newYorkerAlt": "The New Yorker logotipi",
-      "bloombergAlt": "Bloomberg logotipi",
-      "politicoAlt": "POLITICO logotipi"
+      "title": "Mijozlarimiz"
     }
   },
   "design": {
     "title": "Interyer dizayni",
-    "description": "Biz mijozlarimizning uslubi, xarakteri va turmush tarzini aks ettiruvchi interyerlar yaratamiz. Ishimizda estetika, funksionallik va zamonaviy texnologiyalarni birlashtirib, har bir loyihaning noyob va qulay bo'lishini ta'minlaymiz."
+    "description": "Biz mijozlarning uslubi, xarakteri va turmush tarzini aks ettiruvchi interyerlar yaratamiz. Ishimizda estetika, funksionallik va zamonaviy texnologiyalarni birlashtirib, har bir loyihani noyob va qulay qilamiz.",
+    "items": [
+      {
+        "id": 1,
+        "name": "Hashamatli kvartira",
+        "description": "Zamonaviy kvartira uchun nafis interyer dizayni.\nYuqori sifatli materiallar va aqlli uy texnologiyalari qo'llaniladi."
+      },
+      {
+        "id": 2,
+        "name": "Qulay villa",
+        "description": "Villaning issiq va jozibali interyeri.\nQulaylik va nafislik uchun loyihalashtirilgan."
+      }
+    ]
   },
   "contacts": {
-    "title": "Biz bilan bog'laning",
-    "description": "Savollaringiz bormi? Xizmatlarimiz haqida ko'proq bilmoqchimisiz? Quyidagi forma orqali bizga yozing, biz siz bilan imkon qadar tezroq bog'lanamiz.",
+    "title": "Biz bilan bog'lanish",
+    "description": "Savollaringiz bormi? Xizmatlarimiz haqida ko'proq bilmoqchimisiz? Quyidagi shakl orqali bizga yozing, biz siz bilan tez orada bog'lanamiz.",
     "labels": {
       "name": "Ism",
       "phone": "Telefon raqami",
@@ -72,7 +105,7 @@
     "errors": {
       "required": "Iltimos, barcha maydonlarni to'ldiring.",
       "invalidEmail": "Iltimos, haqiqiy elektron pochta manzilini kiriting.",
-      "submitError": "Xabar yuborishda xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
+      "submitError": "Xabarni yuborishda xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
     },
     "success": "Xabar muvaffaqiyatli yuborildi! Tez orada siz bilan bog'lanamiz.",
     "button": {
@@ -81,9 +114,10 @@
     }
   },
   "footer": {
-    "contactDetails": "Bog'lanish uchun ma'lumotlar",
+    "contactDetails": "Aloqa ma'lumotlari",
     "workingHours": "Ish vaqti",
     "socialMedia": "Biz shu yerdamiz",
-    "logoAlt": "Mars arxitektura logotipi"
+    "address": "Asosiy ko'cha, 123, Toshkent",
+    "working_hours": "Dush-Shan: 9:00-17:00"
   }
 }
