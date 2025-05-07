@@ -50,8 +50,14 @@ export default function Project({ portfolioData }: ProjectProps) {
 						{portfolioData.map(item => (
 							<CarouselItem key={item.id}>
 								<section className=' grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-20 '>
+                  <div className='flex'>
+                  <div className="text-7xl lg:text-9xl font-light text-gray-200 hidden lg:block">
+                    {item.id < 10 ? `0${item.id}` : item.id}
+                  </div>
+                 
 									{/* Image */}
 									<div className='relative aspect-[3/4] w-full'>
+                  
 										<Image
 											src={item.image}
 											alt={item.name}
@@ -60,7 +66,7 @@ export default function Project({ portfolioData }: ProjectProps) {
 											sizes='(max-width: 1024px) 90vw, 50vw'
 										/>
 									</div>
-
+ </div>
 									{/* Text */}
 									<div className='flex flex-col justify-start gap-6 lg:gap-12 lg:px-8'>
 										<h3 className='text-3xl md:text-4xl lg:text-5xl font-thin'>
