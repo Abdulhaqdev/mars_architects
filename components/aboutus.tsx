@@ -54,7 +54,7 @@ export default function Aboutus() {
               <h2 className="text-4xl lg:text-5xl font-bold mb-6 lg:mb-10">
                 {t("about.creativePath.title")}
               </h2>
-              <div className="space-y-4 text-[#C4C4C4] text-sm md:text-base max-w-prose">
+              <div className="space-y-4 text-[#C4C4C4] text-sm md:text-base">
                 <div>
                   <p className="text-xs md:text-sm text-[#C4C4C4]">
                     {t("about.creativePath.role")}
@@ -83,6 +83,10 @@ export default function Aboutus() {
                 </p>
                 <p>{t("about.creativePath.description7")}</p>
                 <p>{t("about.creativePath.description8")}</p>
+                <p>{t("about.creativePath.description9")}</p>
+                <p>{t("about.creativePath.description10")}</p>
+
+                <p>{t("about.creativePath.description01")}</p>
               </div>
             </div>
             {/* Image */}
