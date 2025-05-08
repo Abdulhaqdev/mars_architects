@@ -88,50 +88,59 @@ const { lng } = useParams()
             </h2>
           </div>
           <div className="flex md:flex-wrap justify-center items-center gap-3 md:gap-10">
+          <div className="h-8 flex justify-center items-center">
+            <h1 className='text-black text-1xl sm:text-2xl md:text-5xl'>NIIAT</h1>
+            </div>
             <div className="h-8 flex justify-center items-center">
               <Image
-                src="/Subtract.png"
+                src="/bat.png"
+
                 alt="Newsweek"
-                width={180}
+                width={150}
                 height={22}
                 className="object-contain"
               />
             </div>
             <div className="h-8 flex justify-center items-center">
               <Image
-                src="/Vector (1).png"
+                src="/koc.png"
                 alt="TIME"
-                width={180}
+                width={150}
                 height={22}
                 className="object-contain"
               />
             </div>
             <div className="h-8 flex justify-center items-center">
               <Image
-                src="/path2.png"
-                alt="The New Yorker"
-                width={180}
-                height={22}
-                className="object-contain"
-              />
-            </div>
-            <div className="h-8 flex justify-center items-center">
-              <Image
-                src="/Union.png"
+                src="/sherin.png"
                 alt="Bloomberg"
-                width={180}
+                width={150}
                 height={22}
                 className="object-contain"
               />
             </div>
             <div className="h-8 flex justify-center items-center">
               <Image
-                src="/Union (1).png"
-                alt="POLITICO"
-                width={180}
+                src="/east.png"
+                alt="The New Yorker"
+                width={150}
                 height={22}
                 className="object-contain"
               />
+            </div>
+            
+            <div className="h-8 flex justify-center items-center">
+              <Image
+                src="/thetowe.png"
+                alt="POLITICO"
+                width={150}
+                height={22}
+                className="object-contain"
+              />
+            </div>
+           
+            <div className="h-8 flex justify-center items-center">
+            <h1 className='text-black text-1xl  sm:text-2xl md:text-5xl'>Viniks</h1>
             </div>
           </div>
         </div>
