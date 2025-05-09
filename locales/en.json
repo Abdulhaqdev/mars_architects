@@ -11,27 +11,23 @@
       "contacts": "Contacts"
     }
   },
-  "about": {
-    "title": "About Us",
-    "description1": "We are an architectural studio where creativity and functionality merge to create spaces that inspire and transform everyday life.",
-    "description2": "We focus on developing solutions for residential and commercial properties that are not only aesthetically appealing but also practical. Our team of professionals strives for excellence in every project.",
-    "description3": "Each project is a unique journey that begins with understanding your needs and ends with creating a space that exceeds your expectations.",
-    "creativePath": {
-      "title": "Creative Journey",
-      "role": "Architect-Designer",
-      "name": "Dmitry Arkadyevich Kefkhayants",
-      "description1": "I was born in 1988 in Tashkent. In 2005, I graduated from school and enrolled in TASI in the Faculty of Architectural Environment Design. I graduated from the institute in 2009 with one of the highest scores.",
-      "description2": "In 2008, I won first place at the International Architectural Competition MACCA - 1st place (diploma) in Minsk, Belarus.",
-      "description3": "I revealed my charisma and talent in 2006 when I first performed on stage. By winning first place in 2008, I became well-known in professional circles.",
-      "description4": "In 2009, after winning an international competition, I gained recognition not only in Russia but also abroad.",
-      "description5": "In 2010, I became a jury member at international competitions, and in 2012, I served as the chief judge at the World Championship.",
-      "description6": "Today, I continue to inspire millions of people worldwide by sharing my experience and knowledge.",
-      "description7": "I received my first job and project in 2009 at the age of 21, and since then, I have been dedicated solely to architecture and design.",
-      "description8": "2023 to present: Architectural company LLC 'Niiat', Tashkent, Uzbekistan. Position – Chief Architect.",
-      "description9": "2022: 'Enter Engineering' company, Head of Civil Construction and VZiSOV. 2019-2021: LLC 'Epsilon Development Company', Tashkent/Karshi region. Position - Head of Architectural-Construction Group / Chief Project Engineer.",
-      "description10": "June 2017 - September 2019: Architectural company LLC 'Niiat', Tashkent, Uzbekistan. Position – Chief Architect. January 2015 - March 2017: LLC '",
-      "description01": "Currently, I have founded my own architecture and design studio to realize all the experience and potential accumulated over the years."
-    }
+ "creativePath": {
+    "title": "Creative Journey",
+    "role": "Architect-Designer",
+    "name": "Dmitry Arkadyevich Kefkhayants",
+    "description1": "I was born in 1988 in Tashkent. In 2005, I graduated from school and enrolled in TASI in the Faculty of Architectural Environment Design. I graduated from the institute in 2009 with one of the highest scores.",
+    "description2": "In 2008, I won first place at the International Architectural Competition MACCA - 1st place (diploma), Minsk, Belarus.",
+    "description3": "In August 2009, I won 1st place at the Uzbekistan Architects Guild competition (diploma), Tashkent.",
+    "description4": "In January 2010, I became a laureate of the 'Forum Fund' award and won 1st place at the 'Navkiron Uzbekistan' Festival of Traditional and Modern Art (diploma), Tashkent, Uzbekistan.",
+    "description5": "I received my first job and project in 2009 at the age of 21. Since then, I have been dedicated solely to architecture and design, working with various major companies.",
+    "description6": "November 2009 - September 2010: Joint Venture LLC 'Neftegazsanoatloyikha', Tashkent, Uzbekistan. Position – Designer.",
+    "description7": "March 2012 - August 2013: LLC 'TRDM', 'Federation Tower Moscow, City', Moscow, Russia. Position – Architect-Designer.",
+    "description8": "March 2014 - September 2014: Joint Venture LLC 'GLOBAL', Almaty, Kazakhstan. Position – Architect.",
+    "description9": "January 2015 - March 2017: LLC 'UzkoprikLoyikha', Tashkent, Uzbekistan. Position – Chief Project Engineer.",
+    "description10": "June 2017 - September 2019: Architectural company LLC 'Niiat', Tashkent, Uzbekistan. Position – Chief Architect.",
+    "description11": "2019 - 2021: LLC 'Epsilon Development Company', Tashkent/Karshi region. Position – Head of Architectural-Construction Group / Chief Project Engineer.",
+    "description12": "2022: 'Enter Engineering' company, Head of Civil Construction and VZiSOV.",
+    "description13": "2023 - present: Chief Architect at LLC 'Niiat', Tashkent, Uzbekistan. In 2023, I founded my own architecture and design studio 'MARS architects', which is actively developing in all directions."
   },
   "projects": {
     "title": "Architectural Projects",

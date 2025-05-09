@@ -11,27 +11,23 @@
       "contacts": "Kontaktlar"
     }
   },
-  "about": {
-    "title": "Biz haqimizda",
-    "description1": "Biz ijodiy imkoniyatlar va funksionallik birlashadigan arxitektura studiyasimiz, bu esa ilhomlantiruvchi va kundalik hayotni o'zgartiruvchi makonlar yaratadi.",
-    "description2": "Biz turar joy va tijorat ob'ektlari uchun nafaqat estetik jihatdan jozibador, balki amaliy bo'lgan yechimlarni ishlab chiqishga e'tibor qaratamiz. Mutaxassislar jamoamiz har bir loyihada mukammallikka intiladi.",
-    "description3": "Har bir loyiha - bu sizning ehtiyojlaringizni tushunishdan boshlanadigan va sizning kutganlaringizdan oshib ketadigan makon yaratish bilan yakunlanadigan noyob sayohatdir.",
-    "creativePath": {
-      "title": "Ijodiy yo'l",
-      "role": "Arxitektor-dizayner",
-      "name": "Dmitriy Arkadyevich Kefkhayants",
-      "description1": "Men 1988 yilda Toshkent shahrida tug'ilganman. 2005 yilda maktabni tamomladim va TASIga arxitektura muhiti dizayni fakultetiga o'qishga kirdim. 2009 yilda institutni eng yuqori ballardan biri bilan tugatdim.",
-      "description2": "2008 yilda Xalqaro arxitektura tanlovida MACCA - 1-o'rin (diplom) Minsk, Belarusda qo'lga kiritdim.",
-      "description3": "O'z xarizmati va iste'dodimni 2006 yilda birinchi marta sahnada chiqish qilganimda ochib berdim. 2008 yilda birinchi o'rinni egallab, mutaxassislar doirasida mashhur bo'ldim.",
-      "description4": "2009 yilda xalqaro tanlovda g'olib bo'lgach, nafaqat Rossiyada, balki undan tashqarida ham tanildim.",
-      "description5": "2010 yilda xalqaro tanlovlarda hakamlar a'zosi bo'ldim, 2012 yilda esa jahon chempionatida bosh hakam bo'ldim.",
-      "description6": "Bugungi kunda men o'z tajribam va bilimlarimni baham ko'rib, millionlab odamlarni ilhomlantirishda davom etyapman.",
-      "description7": "Birinchi ish va loyihamni 2009 yilda 21 yoshimda oldim, shu paytdan boshlab va bugungi kunga qadar faqat bir ish bilan, arxitektura va dizayn bilan shug'ullanyapman.",
-      "description8": "2023 yildan hozirgacha Arxitektura kompaniyasi MChJ 'Niiat', Toshkent, O'zbekiston Lavozim – Bosh arxitektor.",
-      "description9": "2022 yil 'Enter Engineering' kompaniyasi Fuqaro qurilishi va VZiSOV bo'yicha rahbar 2019-2021 MChJ 'Epsilont Development Company', Toshkent/Qarshi viloyati. Lavozim - Arxitektura-qurilish guruhi rahbari / Loyiha bosh muhandisi.",
-      "description10": "2017 yil iyun - 2019 yil sentyabr Arxitektura kompaniyasi MChJ 'Niiat', Toshkent, O'zbekiston Lavozim – Bosh arxitektor. 2015 yil yanvar - 2017 yil mart MChJ '",
-      "description01": "Hozirda men yillar davomida to'plangan tajriba va salohiyatni ro'yobga chiqarish uchun o'z arxitektura va dizayn studiyamni asos soldim"
-    }
+  "creativePath": {
+    "title": "Ijodiy yo'l",
+    "role": "Arxitektor-dizayner",
+    "name": "Dmitriy Arkadyevich Kefkhayants",
+    "description1": "Men 1988 yilda Toshkent shahrida tug'ilganman. 2005 yilda maktabni tamomladim va TASIga arxitektura muhiti dizayni fakultetiga o'qishga kirdim. 2009 yilda institutni eng yuqori ballardan biri bilan tugatdim.",
+    "description2": "2008 yilda Xalqaro arxitektura tanlovida MACCA - 1-o'rin (diplom), Minsk, Belarusda qo'lga kiritdim.",
+    "description3": "2009 yil avgustda O'zbekiston Arxitektorlar Gildiyasi tanlovida 1-o'rin (diplom), Toshkentda qo'lga kiritdim.",
+    "description4": "2010 yil yanvarda 'Navkiron O'zbekiston' an'anaviy va zamonaviy san'at festivalida 'Forum Jamg'armasi' mukofoti laureati bo'ldim va 1-o'rinni (diplom), Toshkent, O'zbekistonda qo'lga kiritdim.",
+    "description5": "Birinchi ish va loyihamni 2009 yilda 21 yoshimda oldim. Shu paytdan boshlab va bugungi kunga qadar faqat arxitektura va dizayn bilan shug'ullanyapman, turli yirik kompaniyalarda ishladim.",
+    "description6": "2009 yil noyabr - 2010 yil sent pienią: Qo'shma korxona MChJ 'Neftegazsanoatloyixa', Toshkent, O'zbekiston. Lavozim – Dizayner.",
+    "description7": "2012 yil mart - 2013 yil avgust: MChJ 'TRDM', 'Federatsiya Minorasi Moskva, Siti', Moskva, Rossiya. Lavozim – Arxitektor-dizayner.",
+    "description8": "2014 yil mart - 2014 yil sentyabr: Qo'shma korxona MChJ 'GLOBAL', Almaty, Qozog'iston. Lavozim – Arxitektor.",
+    "description9": "2015 yil yanvar - 2017 yil mart: MChJ 'O'zkoprikLoyixa', Toshkent, O'zbekiston. Lavozim – Loyiha bosh muhandisi.",
+    "description10": "2017 yil iyun - 2019 yil sentyabr: Arxitektura kompaniyasi MChJ 'Niiat', Toshkent, O'zbekiston. Lavozim – Bosh arxitektor.",
+    "description11": "2019 - 2021: MChJ 'Epsilont Development Company', Toshkent/Qarshi viloyati. Lavozim – Arxitektura-qurilish guruhi rahbari / Loyiha bosh muhandisi.",
+    "description12": "2022: 'Enter Engineering' kompaniyasi, Fuqaro qurilishi va VZiSOV bo'yicha rahbar.",
+    "description13": "2023 - hozirgacha: MChJ 'Niiat' kompaniyasida bosh arxitektor, Toshkent, O'zbekiston. 2023 yilda o'z arxitektura va dizayn studiyam 'MARS architects'ni asos soldim, u hozirda barcha yo'nalishlarda faol rivojlanmoqda."
   },
   "projects": {
     "title": "Arxitektura loyihalari",

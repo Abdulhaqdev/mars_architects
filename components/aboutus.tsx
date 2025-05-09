@@ -85,8 +85,6 @@ export default function Aboutus() {
                 <p>{t("about.creativePath.description8")}</p>
                 <p>{t("about.creativePath.description9")}</p>
                 <p>{t("about.creativePath.description10")}</p>
-
-                <p>{t("about.creativePath.description01")}</p>
               </div>
             </div>
             {/* Image */}
