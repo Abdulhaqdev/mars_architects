@@ -27,7 +27,7 @@ export default function Aboutus() {
           {/* Image */}
           <div className="relative aspect-[3/4] w-full">
             <Image
-              src="/aboutus1.png"
+              src="/rererere.jpg"
               alt={t("about.image1Alt")}
               fill
               className="object-cover"

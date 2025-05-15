@@ -188,7 +188,7 @@ export default function Hero({ footerData }: HeroProps) {
       <div className="h-[calc(100vh-1px)] container md:h-[calc(600px-400px)]">
         <div className="absolute md:right-0 h-3/4 max-w-6xl z-0">
           <Image
-            src="/hero.png"
+            src="/photo.jpg"
             alt="Modern architecture building with curved glass facade"
             className="object-cover h-[50%] md:h-[600px] w-full md:w-auto max-w-full"
             width={1100}
