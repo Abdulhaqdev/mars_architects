@@ -11,7 +11,7 @@
       "contacts": "Kontaktlar"
     }
   },
-  "creativePath": {
+  "about": {
     "title": "Ijodiy yo'l",
     "role": "Arxitektor-dizayner",
     "name": "Dmitriy Arkadyevich Kefkhayants",
@@ -49,20 +49,6 @@
   },
   "publications": {
     "title": "Nashrlar",
-    "items": [
-      {
-        "id": 1,
-        "title": "Innovatsion arxitektura tendensiyalari",
-        "description": "Barqaror arxitekturadagi so'nggi tendensiyalarni o'rganuvchi maqola.",
-        "date": "2024-05-01"
-      },
-      {
-        "id": 2,
-        "title": "Kelajak dizayni",
-        "description": "Studiyamizning zamonaviy dizayn yondashuvi haqidagi maqola.",
-        "date": "2024-06-15"
-      }
-    ],
     "clients": {
       "title": "Mijozlarimiz"
     }

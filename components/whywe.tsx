@@ -6,10 +6,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./ui/carousel";
-import { Translation } from '@/i18n/client'
 import { useParams } from 'next/navigation'
-// import { Translation } from '@/i18n/server'
-// import { }
+import { useTranslation } from '@/i18n/client'
+// import { useTranslation } from '@/i18n/client'
 
 interface PublicationData {
   id: number;
@@ -27,7 +26,7 @@ interface WhyweProps {
 
 export default  function Whywe({ publicationsData }: WhyweProps ) {
 const { lng } = useParams()
-  const {t} =  Translation(lng as string) // params ni React.use bilan ochamiz;
+  const {t} =  useTranslation(lng as string) // params ni React.use bilan ochamiz;
   return (
     <div className="bg-white">
     
@@ -44,7 +43,8 @@ const { lng } = useParams()
               <div className="flex flex-col md:flex-row justify-start md:justify-between md:items-center">
                 <div className="flex items-start md:items-center md:ml-11">
                   <div className="w-12 hidden md:block h-[1px] bg-gray-500 text-start md:mr-4"></div>
-                  <h2 className="text-3xl font-light tracking-wide">Публикации</h2>
+                  <h2 className="text-3xl font-light tracking-wide">{t("publications.title")} 
+                  </h2>
                 </div>
                 <div className="flex gap-2">
                   <div className="flex items-center ml-10 gap-4 mt-6 relative">
@@ -84,7 +84,7 @@ const { lng } = useParams()
         <div className="md:space-y-20 py-5 md:py-0">
           <div className="border-gray-200 pb-2">
             <h2 className="text-center text-3xl md:text-6xl text-[#101420] font-medium tracking-wide">
-              НАШИ КЛИЕНТЫ
+            {t("publications.clients.title")}
             </h2>
           </div>
           <div className="flex md:flex-wrap justify-center items-center gap-3 md:gap-10 mb-10">

@@ -44,11 +44,10 @@ export default function Hero({ footerData }: HeroProps) {
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng); // Tilni o'zgartirish
-    setCookie("NEXT_LOCALE", lng, { maxAge: 30 * 24 * 60 * 60 }); // Cookie'ga saqlash
-    // Sahifani qayta yuklamasdan URL ni yangilash
-    // window.history.pushState({}, '', `/${lng}`);
+    setCookie("NEXT_LOCALE", lng, { maxAge: 30 * 24 * 60 * 60 }); 
   };
   return (
+    <>
     <main className="h-[800px] relative 3xl:max-w-screen-2xl mx-auto text-white overflow-hidden">
       {/* Navigation */}
       <nav
@@ -319,5 +318,8 @@ export default function Hero({ footerData }: HeroProps) {
         </div>
       </div>
     </main>
+    
+    </>
+
   );
 }
