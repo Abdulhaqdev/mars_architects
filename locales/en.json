@@ -11,38 +11,44 @@
       "contacts": "Contacts"
     }
   },
- "about": {
-    "title": "Creative Journey",
-    "role": "Architect-Designer",
-    "name": "Dmitry Arkadyevich Kefkhayants",
-    "description1": "I was born in 1988 in Tashkent. In 2005, I graduated from school and enrolled in TASI in the Faculty of Architectural Environment Design. I graduated from the institute in 2009 with one of the highest scores.",
-    "description2": "In 2008, I won first place at the International Architectural Competition MACCA - 1st place (diploma), Minsk, Belarus.",
-    "description3": "In August 2009, I won 1st place at the Uzbekistan Architects Guild competition (diploma), Tashkent.",
-    "description4": "In January 2010, I became a laureate of the 'Forum Fund' award and won 1st place at the 'Navkiron Uzbekistan' Festival of Traditional and Modern Art (diploma), Tashkent, Uzbekistan.",
-    "description5": "I received my first job and project in 2009 at the age of 21. Since then, I have been dedicated solely to architecture and design, working with various major companies.",
-    "description6": "November 2009 - September 2010: Joint Venture LLC 'Neftegazsanoatloyikha', Tashkent, Uzbekistan. Position – Designer.",
-    "description7": "March 2012 - August 2013: LLC 'TRDM', 'Federation Tower Moscow, City', Moscow, Russia. Position – Architect-Designer.",
-    "description8": "March 2014 - September 2014: Joint Venture LLC 'GLOBAL', Almaty, Kazakhstan. Position – Architect.",
-    "description9": "January 2015 - March 2017: LLC 'UzkoprikLoyikha', Tashkent, Uzbekistan. Position – Chief Project Engineer.",
-    "description10": "June 2017 - September 2019: Architectural company LLC 'Niiat', Tashkent, Uzbekistan. Position – Chief Architect.",
-    "description11": "2019 - 2021: LLC 'Epsilon Development Company', Tashkent/Karshi region. Position – Head of Architectural-Construction Group / Chief Project Engineer.",
-    "description12": "2022: 'Enter Engineering' company, Head of Civil Construction and VZiSOV.",
-    "description13": "2023 - present: Chief Architect at LLC 'Niiat', Tashkent, Uzbekistan. In 2023, I founded my own architecture and design studio 'MARS architects', which is actively developing in all directions."
+  "about": {
+    "title": "About Us",
+    "description1": "We are an architectural studio where creativity and functionality merge to create spaces that inspire and transform everyday life.",
+    "description2": "We focus on developing solutions for residential and commercial properties that are not only aesthetically appealing but also practical. Our team of professionals strives for excellence in every project.",
+    "description3": "Each project is a unique journey that begins with understanding your needs and ends with creating a space that exceeds your expectations.",
+    "creativePath": {
+      "title": "Creative Journey",
+      "role": "Architect-Designer",
+      "name": "Dmitry Arkadyevich Kefhayants",
+      "description1": "I was born in 1988 in Tashkent. I graduated from school in 2005 and enrolled in TASI at the Faculty of Architectural Environment Design. I completed my studies in 2009 with one of the highest scores.",
+      "description2": "In 2008, I won first place at the International Architectural Competition MACCA - 1st place (diploma), Minsk, Belarus.",
+      "description3": "In August 2009, I received 1st place at the Uzbekistan Architects Guild Competition (diploma), Tashkent.",
+      "description4": "In January 2010, I became a laureate of the 'Forum Fund' award and took 1st place at the Festival of Traditional and Contemporary Art 'Navkiron Uzbekistan' (diploma), Tashkent, Uzbekistan.",
+      "description5": "I received my first job and project in 2009 at the age of 21. Since then, I have been exclusively engaged in architecture and design, working with various large companies.",
+      "description6": "November 2009 - September 2010: Joint Venture LLC 'Neftegazsanoatloyiha', Tashkent, Uzbekistan. Position – Designer.",
+      "description7": "March 2012 - August 2013: LLC 'TRDM', 'Federation Tower, Moscow City', Moscow, Russia. Position – Architect-Designer.",
+      "description8": "March 2014 - September 2014: Joint Venture LLC 'GLOBAL', Almaty, Kazakhstan. Position – Architect.",
+      "description9": "January 2015 - March 2017: LLC 'Uzkoprikloyiha', Tashkent, Uzbekistan. Position – Chief Project Engineer.",
+      "description10": "June 2017 - September 2019: Architectural Company LLC 'Niiat', Tashkent, Uzbekistan. Position – Chief Architect.",
+      "description11": "2019 - 2021: LLC 'Epsilon Development Company', Tashkent/Kashkadarya Region. Position – Head of Architectural-Construction Group / Chief Project Engineer.",
+      "description12": "2022: 'Enter Engineering' Company, Head of Civil Construction and VZiSOV.",
+      "description13": "2023 - present: Chief Architect at LLC 'Niiat', Tashkent, Uzbekistan. In 2023, I founded my own architecture and design studio 'MARS architects', which is actively developing in all directions."
+    }
   },
   "projects": {
     "title": "Architectural Projects",
-    "description": "We create architecture that harmoniously combines aesthetics, functionality, and innovative technologies. Our studio’s portfolio includes unique residential, commercial, and public space projects designed with modern trends and our clients’ individual needs in mind.",
+    "description": "We create architecture that harmoniously combines aesthetics, functionality, and innovative technologies. Our studio’s portfolio includes unique projects for residential, commercial, and public spaces, designed with modern trends and our clients’ individual needs in mind.",
     "items": [
       {
         "id": 1,
         "name": "Modern Residential Complex",
-        "short_description": "A modern residential complex with sustainable design.",
+        "short_description": "Modern residential complex with sustainable design.",
         "description": "This project incorporates innovative architectural solutions.\nIt prioritizes eco-friendly materials and energy efficiency."
       },
       {
         "id": 2,
         "name": "Commercial Hub",
-        "short_description": "A dynamic commercial space for businesses.",
+        "short_description": "Dynamic commercial space for business.",
         "description": "Designed for functionality and aesthetics.\nIncludes modern technologies for smart operations."
       }
     ]
@@ -69,17 +75,17 @@
   },
   "design": {
     "title": "Interior Design",
-    "description": "We create interiors that reflect our clients’ style, character, and lifestyle. In our work, we combine aesthetics, functionality, and modern technologies to make each project unique and comfortable.",
+    "description": "We create interiors that reflect our clients’ style, character, and lifestyle. In our work, we combine aesthetics, functionality, and modern technologies to ensure each project is unique and comfortable.",
     "items": [
       {
         "id": 1,
-        "name": "Luxury Apartment",
-        "description": "Exquisite interior design for a modern apartment.\nUses high-quality materials and smart home technologies."
+        "name": "Luxurious Apartment",
+        "description": "Sophisticated interior design for a modern apartment.\nUses high-quality materials and smart home technologies."
       },
       {
         "id": 2,
         "name": "Cozy Villa",
-        "description": "A warm and inviting villa interior.\nDesigned for comfort and elegance."
+        "description": "Warm and inviting villa interior.\nDesigned for comfort and elegance."
       }
     ]
   },
